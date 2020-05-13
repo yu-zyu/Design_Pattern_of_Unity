@@ -1,33 +1,34 @@
 ﻿using UnityEngine;
 
-public class BookShelfIterator : Iterator
-{
-    private BookShelf bookShelf;
-    private int index;
-
-    public BookShelfIterator(BookShelf bookShelf)
+namespace IteratorPattern {
+    public class BookShelfIterator : Iterator
     {
-        this.bookShelf = bookShelf;
-        this.index = 0;
-    }
+        private BookShelf bookShelf;
+        private int index;
 
-    public bool hasNext()
-    {
-        if(index < bookShelf.getLength())
+        public BookShelfIterator(BookShelf bookShelf)
         {
-            return true;
+            this.bookShelf = bookShelf;
+            this.index = 0;
         }
-        else
+
+        public bool hasNext()
         {
-            return false;
+            if (index < bookShelf.getLength())
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public Object next()
+        {
+            Book book = bookShelf.getBookAt(index);
+            index++;
+            return book;
         }
     }
-
-    public Object next()
-    {
-        Book book = bookShelf.getBookAt(index);
-        index++;
-        return book;
-    }
-
 }

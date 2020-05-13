@@ -1,7 +1,10 @@
 ﻿using UnityEngine;
 
-public interface Iterator
+namespace IteratorPattern
 {
-    bool hasNext();
-    Object next();
+    public interface Iterator
+    {
+        bool hasNext();
+        Object next();
+    }
 }

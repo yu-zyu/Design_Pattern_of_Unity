@@ -1,32 +1,34 @@
-﻿public class BookShelf : Aggregate
-{
-    private Book[] books;
-    private int last = 0;
-
-    public BookShelf(int maxsize)
+﻿
+namespace IteratorPattern {
+    public class BookShelf : Aggregate
     {
-        this.books = new Book[maxsize];
-    }
+        private Book[] books;
+        private int last = 0;
 
-    public Book getBookAt(int index)
-    {
-        return books[index];
-    }
+        public BookShelf(int maxsize)
+        {
+            this.books = new Book[maxsize];
+        }
 
-    public void appendBook(Book book)
-    {
-        this.books[last] = book;
-        last++;
-    }
+        public Book getBookAt(int index)
+        {
+            return books[index];
+        }
 
-    public int getLength()
-    {
-        return last;
-    }
+        public void appendBook(Book book)
+        {
+            this.books[last] = book;
+            last++;
+        }
 
-    public Iterator iterator()
-    {
-        return new BookShelfIterator(this);
-    }
+        public int getLength()
+        {
+            return last;
+        }
 
+        public Iterator iterator()
+        {
+            return new BookShelfIterator(this);
+        }
+    }
 }

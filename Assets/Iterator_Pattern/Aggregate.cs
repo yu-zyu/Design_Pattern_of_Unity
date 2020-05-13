@@ -1,4 +1,6 @@
-﻿public interface Aggregate
-{
-    Iterator iterator();
+﻿namespace IteratorPattern { 
+    public interface Aggregate
+    {
+        Iterator iterator();
+    }
 }
