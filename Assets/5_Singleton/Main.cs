@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-
 namespace SingletonPattern
 {
     public class Main : MonoBehaviour
