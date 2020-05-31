@@ -50,12 +50,12 @@ void Start()
             //    textPass.setEchoChar('*');
             //    buttonOk = new ColleagueButton("OK");
             //    buttonCancel = new ColleagueButton("Cancel");
-            checkGuest.SetMediator(lf);
-            checkLogin.SetMediator(this);
-            textUser.SetMediator(this);
-            textPass.SetMediator(this);
-            buttonOk.SetMediator(this);
-            buttonCancel.SetMediator(this);
+        //    checkGuest.SetMediator(lf);
+        //    checkLogin.SetMediator(this);
+        //    textUser.SetMediator(this);
+        //    textPass.SetMediator(this);
+        //    buttonOk.SetMediator(this);
+        //    buttonCancel.SetMediator(this);
 
         //    checkGuest.addItemListener(checkGuest);
         //    checkGuest.addItemListener(checkGuest);
