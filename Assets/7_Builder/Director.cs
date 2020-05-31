@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace BilderPattern
+namespace BuilderPattern
 {
     public class Director
     {

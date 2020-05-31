@@ -1,4 +1,5 @@
-﻿namespace BilderPattern
+﻿
+namespace BuilderPattern
 {
     public abstract class Builder 
     {

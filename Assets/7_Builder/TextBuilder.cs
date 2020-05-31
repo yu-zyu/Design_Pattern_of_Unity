@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Text;
 
-namespace BilderPattern
+namespace BuilderPattern
 {
     public class TextBuilder : Builder
     {

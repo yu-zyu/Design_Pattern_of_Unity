@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BilderPattern
+namespace BuilderPattern
 {
     public class Main : MonoBehaviour
     {
