@@ -15,7 +15,6 @@ namespace AdapterPattern_advanced
                 f.setValue("month", "4");
                 f.setValue("day", "21");
                 f.writeToFile("newfile.txt");
-                Debug.Log(f.getValue("month"));
             }
             catch (Exception ex)
             {
