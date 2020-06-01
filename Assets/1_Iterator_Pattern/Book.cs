@@ -2,7 +2,7 @@
 
 namespace IteratorPattern
 {
-    public class Book : MonoBehaviour
+    public class Book
     {
         private string name;
 

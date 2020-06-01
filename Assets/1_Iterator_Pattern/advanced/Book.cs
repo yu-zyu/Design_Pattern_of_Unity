@@ -2,7 +2,7 @@
 
 namespace IteratorPattern_advanced
 {
-    public class Book : MonoBehaviour
+    public class Book
     {
         public GameObject book;
         private string name;

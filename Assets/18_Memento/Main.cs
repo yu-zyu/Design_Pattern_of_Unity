@@ -35,7 +35,8 @@ namespace MementoPattern
                 try
                 {
                     Thread.Sleep(1000);
-                }catch(Exception e)
+                }
+                catch (Exception)
                 {
 
                 }

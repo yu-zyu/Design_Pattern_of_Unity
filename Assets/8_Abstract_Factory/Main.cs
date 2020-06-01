@@ -17,7 +17,7 @@ namespace AbstractFactoryPattern
             };
 
 
-            Factory factory = Factory.getFactory(target_list[2]);
+            Factory factory = Factory.getFactory(target_list[0]);
 
             Link asahi = factory.createLink("朝日新聞", "http://www.asahi.com/");
             Link yomiuri = factory.createLink("読売新聞", "http://www.yomiuri.com/");

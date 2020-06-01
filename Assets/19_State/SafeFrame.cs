@@ -27,8 +27,6 @@ namespace StatePattern
         void Awake()
         {
             state = DayState.GetInstance();
-            // textClock.setEditable(false);
-            // textScreen.setEditable(false);
             buttonUse.onClick.AddListener(() => { ActionPerformed(buttonUse); });
             buttonAlarm.onClick.AddListener(() => { ActionPerformed(buttonAlarm); });
             buttonPhone.onClick.AddListener(() => { ActionPerformed(buttonPhone); });
@@ -37,21 +35,7 @@ namespace StatePattern
 
         public SafeFrame(string title)
         {
-            //super(title);
-            //setBackground(Color.lightGray);
-            //setLayout(new BorderLayout());
-            //Add(textClock, BorderLayout());
-            //textClock.setEditable(false);
-            //Add(textScreen, BorderLayout.CENTER;
-            //textScreen.setEditable(false);
-            //Panel panel = new Panel();
-            //panel.add(buttonUse);
-            //panel.add(buttonAlarm);
-            //panel.add(buttonPhone);
-            //panel.add(buttonExit);
-            //Add(panel, BorderLayout.SOUTH);
-            //Pack();
-            //show();
+
         }
 
         public void ActionPerformed(Object button)

@@ -15,7 +15,7 @@ namespace ObserverPattern
             {
                 Thread.Sleep(100);
             }
-            catch (Exception e)
+            catch (Exception)
             {
 
             }

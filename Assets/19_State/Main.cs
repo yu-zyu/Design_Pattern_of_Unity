@@ -47,7 +47,7 @@ namespace StatePattern
                 try
                 {
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
 
                 }

@@ -6,7 +6,6 @@ namespace MediatorPattern
 {
     public class LoginFrame : MonoBehaviour, Mediator
     {
-        public GameObject gameObject;
         [SerializeField]
         private ColleagueCheckbox checkGuest;
         [SerializeField]
@@ -19,9 +18,9 @@ namespace MediatorPattern
         private ColleagueButton buttonOk;
         [SerializeField]
         private ColleagueButton buttonCancel;
-        private LoginFrame lf;
+        private LoginFrame lfs;
 
-void Start()
+        void Start()
         {
             checkGuest.SetMediator(this);
             checkLogin.SetMediator(this);
@@ -32,37 +31,17 @@ void Start()
             textUser.SetColleagueEnabled(false);
             textPass.SetColleagueEnabled(false);
             buttonOk.SetColleagueEnabled(true);
+            buttonCancel.SetColleagueEnabled(true);
         }
 
         public LoginFrame(string title)
         {
-//            CreateColleagues();
             
         }
 
         public void CreateColleagues()
         {
-            //    CheckboxGroup g = new CheckboxGroup();
-            //    checkGuest = new ColleagueCheckbox("Guest", g, true);
-            //    checkLogin = new ColleagueCheckbox("Lofin", g, false);
-            //    textUser = new ColleagueTextField("", 10);
-            //    textPass = new ColleagueTextField("", 10);
-            //    textPass.setEchoChar('*');
-            //    buttonOk = new ColleagueButton("OK");
-            //    buttonCancel = new ColleagueButton("Cancel");
-        //    checkGuest.SetMediator(lf);
-        //    checkLogin.SetMediator(this);
-        //    textUser.SetMediator(this);
-        //    textPass.SetMediator(this);
-        //    buttonOk.SetMediator(this);
-        //    buttonCancel.SetMediator(this);
 
-        //    checkGuest.addItemListener(checkGuest);
-        //    checkGuest.addItemListener(checkGuest);
-        //    textUser.addTextListener(textUser);
-        //    textPass.addTextListener(textPass);
-        //    buttonOk.addActionListener(this);
-        //    buttonCancel.addActionListener(this);
         }
 
         public void ColleagueChanged(string name)
@@ -103,7 +82,7 @@ void Start()
 
         public void actionPerformed()
         {
-            //Debug.Log(e.toString());
+
         }
     }
 }

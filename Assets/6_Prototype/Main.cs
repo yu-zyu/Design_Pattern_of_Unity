@@ -7,7 +7,6 @@ namespace PrototypePattern
     {
         void Start()
         {
-            Debug.Log("a");
             Manager manager = new Manager();
             UnderlinePen upen = new UnderlinePen('~');
             MessageBox mbox = new MessageBox('*');

@@ -18,12 +18,12 @@ namespace StrategyPattern
                 Hand nextHand2 = player2.nextHand();
                 if (nextHand1.isStrongerThan(nextHand2))
                 {
-                    Debug.Log("Winner:" + player1);
+                    Debug.Log("Winner:" + player1.toString());
                     player1.win();
                     player2.lose();
                 }else if (nextHand2.isStrongerThan(nextHand1))
                 {
-                    Debug.Log("Winner;" + player2);
+                    Debug.Log("Winner;" + player2.toString());
                     player1.lose();
                     player2.win();
                 }

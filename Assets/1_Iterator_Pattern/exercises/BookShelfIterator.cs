@@ -25,7 +25,7 @@ namespace IteratorPattern_exercises
             }
         }
 
-        public Object next()
+        public object next()
         {
             Book book = bookShelf.getBookAt(index);
             index++;

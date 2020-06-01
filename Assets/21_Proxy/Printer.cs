@@ -46,7 +46,7 @@ namespace ProxyPattern
                 {
                     Thread.Sleep(1000);
                 }
-                catch(Exception e)
+                catch(Exception)
                 {
 
                 }
